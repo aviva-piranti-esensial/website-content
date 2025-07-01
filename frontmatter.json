@@ -1,0 +1,135 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "blog",
+      "path": "[[workspace]]/src/content/blog"
+    },
+    {
+      "title": "portfolio",
+      "path": "[[workspace]]/src/content/portfolio"
+    },
+    {
+      "title": "services",
+      "path": "[[workspace]]/src/content/services"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": "'blog'",
+      "filePrefix": null,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "year",
+          "name": "year",
+          "type": "number"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "choice",
+          "choices": [
+            "SAAS",
+            "Mobile Application",
+            "Web Application",
+            "Company Website",
+            "E-commerce"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "portfolio",
+      "pageBundle": false,
+      "previewPath": "'portfolio'",
+      "filePrefix": null,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "choice",
+          "choices": [
+            "SAAS",
+            "Mobile Application",
+            "Web Application",
+            "Company Website",
+            "E-commerce"
+          ]
+        },
+        {
+          "title": "Year",
+          "name": "year",
+          "type": "datetime"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "pageBundle": false,
+      "previewPath": "'services'",
+      "filePrefix": null,
+      "clearEmpty": true,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Short Description",
+          "name": "shortDescription",
+          "type": "string"
+        },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "image",
+          "isPreviewImage": true
+        }
+      ]
+    }
+  ]
+}
