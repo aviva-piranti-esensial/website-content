@@ -3,18 +3,33 @@
   "frontMatter.framework.id": "astro",
   "frontMatter.preview.host": "http://localhost:4321",
   "frontMatter.content.publicFolder": "public",
+  "frontMatter.content.i18n": [
+    {
+      "title": "English",
+      "locale": "en",
+      "path": "en"
+    },
+    {
+      "title": "Arabic",
+      "locale": "ar",
+      "path": "ar"
+    }
+  ],
   "frontMatter.content.pageFolders": [
     {
       "title": "blog",
-      "path": "[[workspace]]/src/content/blog"
+      "path": "[[workspace]]/src/blog",
+      "defaultLocale": "en"
     },
     {
       "title": "portfolio",
-      "path": "[[workspace]]/src/content/portfolio"
+      "path": "[[workspace]]/src/portfolio",
+      "defaultLocale": "en"
     },
     {
       "title": "services",
-      "path": "[[workspace]]/src/content/services"
+      "path": "[[workspace]]/src/services",
+      "defaultLocale": "en"
     }
   ],
   "frontMatter.taxonomy.contentTypes": [
